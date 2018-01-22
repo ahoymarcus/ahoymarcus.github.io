@@ -1,0 +1,132 @@
+/*
+	Autor: Marcus Vinícius da Silveira Richa
+	Estilo: para site de música coral.
+*/
+body {
+  font-family: 'Quattrocento', serif;
+  font-weight: 300;
+  
+  background-color: linen;
+}
+
+header {
+	
+	/* background-color: bisque; */
+	padding: 20px 0;
+	
+	width: 100%;
+}
+header h1 {
+	color: lightsalmon;
+	font-family: 'Courgette', cursive;
+	font-weight: bold;
+	font-size: 60px;
+	letter-spacing: 2px;
+	margin: 0;
+}
+header li, footer li {
+	
+  display: inline;
+  padding: 0 3px;
+  margin: 0;
+  list-style: none;
+}
+header a, footer a {
+	color: lightsalmon;
+	font-weight: bold;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('../multimidia/cyranoclowns.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  
+
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: lightsalmon;
+  
+  			/* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+  text-shadow: 0 0 0.5px bisque;
+}
+
+.jumbotron h6 {
+  /* margin: 0 0 20px; */
+  color: #660000;
+  font-weight: bold;
+  
+  position: relative;
+  top: 200px;
+  right: -190px;
+}
+
+section {
+	background-color: lightsalmon;
+}
+
+section .row img {
+  margin: 0;
+  width: 100%;
+  color: #fff;
+}
+.captionlinks {
+			/* #337ab7 */
+	color: #fff;
+	font-weight: 500;
+} 
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 14px;
+  padding: 20px 0;
+  
+  /* background-color: bisque; */
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+footer p {
+	color: lightsalmon;
+	font-weight: bold;
+}
+
+.auxiliar li {
+	font-size: 22px;
+}
+/* .auxiliar ul { */
+	/* padding: 5px 5px 5px 5px; */
+/* } */
+
+/* 
+	Media Queries
+*/
+
+
+
+
+
+
+
+
+
+
+

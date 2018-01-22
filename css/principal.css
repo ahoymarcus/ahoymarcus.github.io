@@ -1,0 +1,224 @@
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'Quattrocento', serif;
+	
+					/* olivedrab rosybrown sandybrown seagreen #80ff80-verdeClaro1 #66ff66-verdeClaro2 
+					darkolivegreen darkkhaki linen bisque lightsalmon aliceblue #660000 verdeEscuro-#4a8c4a */
+					
+	/* background-color: olivedrab; */
+	background-color: seagreen;
+	
+			
+	color: darkolivegreen;
+	
+	
+	
+	width: 100%;
+	max-widht: 980px;
+}
+
+.todo {
+	background-color: #589a58; /* #589a58 #4a8c4a */
+	
+	
+	width: 95%;
+	
+	border-radius: 15px 15px 15px 15px;
+}
+
+.logo {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.coralSinging {
+	font-family: 'Courgette', cursive;
+	font-size: 1rem;
+	font-weight: bold;
+	color: lightsalmon;
+	
+	margin-top: 10px;
+	margin-right: 75px;
+		
+}
+
+.social1 ul, .social2 ul {
+	list-style: none;
+	padding-left: 0;
+	
+}
+.social1 ul {
+	margin-top: 10px;
+}
+.social1 li, .social2 li {
+	display: inline;
+	
+	
+	float: right;
+}
+.social1 li {
+	padding: 0 5px 0 5px;
+}
+.social2 li {
+	padding-right: 10px; 
+}
+.social1 img, .social2 img {
+	box-shadow: 0 0 1px 1px aliceblue;
+}
+
+header {
+	background: linear-gradient(linen, aliceblue, darkkhaki);
+	
+	border-radius: 15px 15px 0 0;
+}
+header h1, header h2 {
+	font-family: 'Courgette', cursive;
+	
+	font-weight: bold;
+	padding-left: 5px;
+	
+	text-align: center;
+	
+	
+}
+header h1 {
+	font-size: 2rem;
+	
+	margin-top: 10px;
+	margin-bottom: 0;
+	padding: 5px;
+	
+}
+header h2 {
+	font-size: 1rem;
+	
+	margin-top: 0;
+	margin-bottom: 5px 5px 5px 0;
+}
+
+.procura {
+	display: none;
+}
+
+.nav-principal, .nav2 {
+			/* aliceblue-#f0f8ff honeydew-#f0fff0 */
+	background: aliceblue; 
+	
+	line-height: 30px;
+	
+			/* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+	text-shadow: 0 0 0.3px lightsalmon;
+}
+.nav-principal ul, .nav2 ul {
+	list-style-type: none;
+}
+.nav-principal li, .nav2 li {
+	display: inline;
+	
+	padding: 5px; 
+}
+.nav-principal a, .nav2  a {
+	color: black;
+	text-decoration: none;
+}
+.nav2 {
+	margin-top: 80px;
+	position: relative;
+	bottom: 15px;
+	
+	clear: left;
+}
+
+
+main {
+	color: black;
+}
+main div {
+	width: 295px;
+	
+	float: left;
+	margin: 0 15px 80px 10px;
+	
+}
+main p {
+				/* #45434c #374054 #474b54 #42320e #4c0d0df5 #3e331c*/
+	color: darkkhaki; 
+	font-weight: bold; 
+	
+	text-shadow: 0.5px 0.5px darkolivegreen;
+	
+	text-align: justify;
+}
+main p a {
+	color: black;
+	text-decoration: none;
+}
+main figure {
+	margin: 16px 10px 16px 0; 
+}
+figure a {
+	color: black;
+	text-decoration: none;
+}
+
+main blockquote {
+	color: darkkhaki;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 30px;
+	
+	text-shadow: 0.5px 0.5px aliceblue;
+	
+}
+
+.captionlinks {
+	color: black;
+	text-decoration: none;
+}
+
+
+footer p {
+	color: darkkhaki;
+	font-size: 0.7rem;
+}
+
+@media only screen and (min-width: 480px) {
+	main div {
+		width: 430px;
+	
+	}
+}
+
+@media only screen and (min-width: 670px) {
+	main div {
+		width: 295px;
+	
+	}
+}
+
+@media only screen and (min-width: 870px) {
+	main div {
+		width: 380px;
+	
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	main div {
+		width: 295px;
+	
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	main div {
+		width: 320px;
+	}
+}
+
+
+
+
