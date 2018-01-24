@@ -139,7 +139,7 @@ main {
 	color: black;
 }
 main div {
-	width: 295px;
+	width: 285px;
 	
 	float: left;
 	margin: 0 15px 80px 10px;
@@ -159,13 +159,15 @@ main p a {
 	text-decoration: none;
 }
 main figure {
-	margin: 16px 10px 16px 0; 
+	margin: 16px 15px 16px 0; 
 }
-figure a {
+main figure a {
 	color: black;
 	text-decoration: none;
 }
-
+main audio {
+	width: 285px;
+}
 main blockquote {
 	color: darkkhaki;
 	font-weight: bold;
