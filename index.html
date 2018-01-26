@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8" />
-	<title>Canto Erudito</title>
+	<title>Música Erudita</title>
 	<meta name="description" content="As belezas da música erudita."/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -60,7 +60,7 @@
 <div class="todo">
 
 	<header>
-		<h1>O Canto e a Música Erudita</h1><h2>Ouvindo as belezas da música erudita no mundo</h2><small>Fonte: #####</small> 
+		<h1>O Canto e a Música Erudita</h1><h2>Ouvindo as belezas da música erudita no mundo</h2><small id="menu">Menu</small> 
 		<form class="procura" name="procura">
 			<label for="procura">Search</label>
 			<input type="text" name="procura" placeholder="procura"/>
@@ -77,8 +77,16 @@
 	
 	</nav>
 	
+	<aside class="dropdown">
+		<ul>
+			<li><a href="#bach" class="menu-shadow">Johann Sebastian Bach</a></li>
+			<li><a href="#vivaldi" class="menu-shadow">Antônio Vivaldi</a></li>
+			<li><a href="#beethoven" class="menu-shadow">Ludwig van Beethoven</a></li>
+		</ul>
+	</aside>
+	
 	<main>
-		<div class="bach">
+		<div class="bach" id="bach">
 			<h1>Johann Sebastian Bach (1685-1750)</h1>
 			<p>Johann Sebastian Bach é um dos grandes nomes da música mundial. Sendo considerado o maior compositor do período barroco e um dos maiores da história (alguns o qualificam como o maior e mais destacado), Bach foi um músico virtuoso, que guardava grande habilidade para diversos instrumentos (órgão, cravo e violino) e até no canto. </p>
 			<p>Nascido na Alemanha, ele tinha como influências a música polifônica alemã do século XVII e referências como as de Bruhns e de Albioni. Muito conhecido pelos seus trabalhos e experiências com o estudo de harmonia, Bach se insere num període de transição da música, na qual a antiga harmonia estritamente fundada em princípios matemáticos (retornando aos estudos de Ptágoras) começou a ser vista de maneira mais alegórica, simbólica e talvez expressiva.
@@ -103,7 +111,7 @@
 			
 		</div> <!-- /.bach -->
 
-		<div class="vivaldi">
+		<div class="vivaldi" id="vivaldi">
 			<h1>Antonio Vivaldi (1678-1741)</h1>
 			<p>O italiano Vivaldi é coetâneo de Bach, dividindo com ele também uma maior presença dentro do estilo barroco. A sua obra de maior conhecimento pelo grande público é "As Quatro Estações". Outro aspecto compartilhado com Bach é a sua grande maestria como instrumentista, ainda que no caso de Vivaldi era basicamente o violino o seu instrumento de destaque.</p>
 			<p>Ainda jovem o compositor é inspirado por seu pai a seguir o caminho da música, e mais tarde, quando de sua admissão no convento e ordenação como padre católico, Vivaldi continua ligado ao ensino da música em seu ministério.</p>
@@ -121,7 +129,7 @@
 			</figure>
 		</div> <!-- /.vivaldi -->
 	
-		<div class="beethoven"> 
+		<div class="beethoven" id="beethoven"> 
 			<h1>Ludwig van Beethoven(1770 - 1827)</h1>
 			<p>Compositor alemão, nascido na cidade de Viena, um importante representante dos períodos do Classicismo (séc. XVIII) e do Romantismo (séc. XIX). Também Beethoven foi um prodígio desde cedo, tendo sido incentivado por seu pai a se destacar ao piano. Um ponto bastante interessenta da vida desde grande compositor e ressaltado pelo <a href="https://pt.wikipedia.org/wiki/Ludwig_van_Beethoven" target="blanck">Wikipedia</a> está no fato da origem social de Beethoven. Seu pai um imigrante da Bélgica se estabeleceu como maestro de capela e sua mãe era filha do chefe de cozinha, enquanto que o próprio Beethoven nunca teria tido grande aprofundamento nos estudos. Contudo, junto com a música enfrentou desde cedo as dificuldades da vida, precisando lidar com a doença do alcolismo do pai e a morte precoce de sua mãe.</p>
 			<p>De qualquer forma, já aos 14 anos de idade é colocado na função de organicista-assistente e mais tarde vem ter contato com as idéias e ideais culturais da literatura européia do final do século XVIII, especialmente com o Iluminismo e a Revolução Francesa.</p>
@@ -192,7 +200,13 @@
 	</p>	
 </footer>
 
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+	</script>
 	
+	<script src="js/main.js" type="text/javascript"></script>
 	
 </body>
 </html>

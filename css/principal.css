@@ -98,7 +98,18 @@ header h2 {
 	margin-bottom: 5px 5px 5px 0;
 }
 header small {
-	visibility: hidden;
+	/* visibility: hidden; */
+	color: black;
+	text-decoration: underline;
+	
+	padding-left: 20px;
+	position: relative;
+	bottom: 5px;
+	
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1rem;
+	
 }
 
 .procura {
@@ -134,6 +145,22 @@ header small {
 	clear: left;
 }
 
+aside {
+	display: none;
+	font-weight: bold;
+	
+	background: cadetblue;
+}
+aside ul {
+	list-style: none;
+}
+aside a {
+	color: darkkhaki;
+	font-weight: bold;
+	text-decoration: none;
+	
+	text-shadow: 0 0 4px lightsalmon;
+}
 
 main {
 	color: black;
