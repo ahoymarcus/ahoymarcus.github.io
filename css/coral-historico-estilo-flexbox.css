@@ -1,0 +1,245 @@
+/*  
+	linear-gradient(lemonChiffon, linen, paleGoldenRod)
+	radial-gradient(bisque, linen)
+	LightSlateGray
+	cadetBlue
+*/
+/* radial-gradient(bisque, linen), 
+   linear-gradient(linen, lemonChiffon, paleGoldenRod)
+    linear-gradient(linen, aliceblue, lemonChiffon)
+*/
+/* 
+   radial-gradient(linen, mintCream, bisque) 
+   linear-gradient(paleGoldenRod, white, darkkhaki)
+*/
+/* lightsalmon */
+html {
+  font-size: 16px; }
+  html body {
+    font-family: 'Quattrocento', serif;
+    background: cadetBlue;
+    /* $color-main $color-main-aux*/
+    color: #556055;
+    width: 100%; }
+    html body .logo {
+      display: flex;
+      flex-wrap: wrap; }
+      html body .logo .coral-singing {
+        font-family: 'Courgette', cursive;
+        font-size: 1rem;
+        font-weight: bold;
+        color: mintCream;
+        margin-top: 10px;
+        margin-right: 75px; }
+      html body .logo .social1 ul {
+        list-style: none;
+        padding-left: 0; }
+      html body .logo .social1 ul {
+        margin-top: 10px; }
+      html body .logo .social1 li {
+        display: inline;
+        float: right;
+        padding: 0 5px 0 5px; }
+      html body .logo .social1 img {
+        box-shadow: 0 0 1px 1px aliceBlue; }
+    html body .social2 ul {
+      list-style: none;
+      padding-left: 0; }
+    html body .social2 li {
+      display: inline;
+      float: right;
+      padding-right: 10px; }
+    html body .social2 img {
+      box-shadow: 0 0 1px 1px aliceBlue; }
+    html body .todo {
+      background: linear-gradient(linen, aliceblue, linen);
+      width: 95%;
+      border-radius: 15px 15px 15px 15px; }
+      html body .todo header {
+        background: linear-gradient(paleGoldenRod, white, paleGoldenRod);
+        border-radius: 15px 15px 0 0;
+        color: #516b51; }
+        html body .todo header h1, html body .todo header h2 {
+          font-family: 'Courgette', cursive;
+          font-weight: bold;
+          padding: 10px;
+          text-align: center; }
+        html body .todo header h1 {
+          font-size: 2rem;
+          margin-top: 10px;
+          margin-bottom: 0;
+          padding: 5px; }
+        html body .todo header h2 {
+          font-size: 1.7rem;
+          margin-top: 0;
+          padding-bottom: 25px; }
+      html body .todo .nav-principal, html body .todo .nav2 {
+        background: aliceblue;
+        line-height: 30px;
+        text-shadow: 0 0 0.3px lightsalmon; }
+        html body .todo .nav-principal ul, html body .todo .nav2 ul {
+          list-style: none; }
+        html body .todo .nav-principal li, html body .todo .nav2 li {
+          display: inline;
+          padding: 5px; }
+        html body .todo .nav-principal a, html body .todo .nav2 a {
+          color: black;
+          text-decoration: none; }
+        html body .todo .nav-principal:hover, html body .todo .nav2:hover {
+          text-decoration: underline; }
+      html body .todo .nav2 {
+        margin-top: 80px;
+        position: relative;
+        bottom: 15px;
+        clear: left; }
+      html body .todo .div-menu figure {
+        display: inline;
+        margin-left: 10px;
+        margin-bottom: 0; }
+      html body .todo .div-menu img {
+        opacity: 0.8;
+        position: relative;
+        top: 5px; }
+        html body .todo .div-menu img:hover {
+          box-shadow: 0 0 4px darkkhaki; }
+      html body .todo .div-menu figcaption {
+        font-family: 'Courgette', cursive;
+        color: #5f665f;
+        /* , 0 0 4px #ba613b */
+        text-shadow: 0 0 2px GoldenRod;
+        position: relative;
+        bottom: 23px;
+        left: 23px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        z-index: 10;
+        /* opacity: 0.7; */ }
+      html body .todo .dropdown {
+        font-size: 0.9rem;
+        /* linen */
+        background: none;
+        position: relative;
+        bottom: 35px;
+        left: 65px;
+        width: 230px; }
+        html body .todo .dropdown #drop1, html body .todo .dropdown #drop2 {
+          list-style: none;
+          margin-top: 0;
+          margin-bottom: 0; }
+          html body .todo .dropdown #drop1 li, html body .todo .dropdown #drop2 li {
+            padding-bottom: 5px; }
+        html body .todo .dropdown a {
+          font-family: 'Courgette', cursive;
+          /* $color-header $color-body darkGray */
+          color: #556055;
+          font-weight: bold;
+          text-decoration: none;
+          /* mintCream orange #00005b oliveDrab GoldenRod */
+          text-shadow: 0 0 2px GoldenRod, 0 0 4px #ba613b; }
+      html body .todo main {
+        clear: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+        html body .todo main div {
+          width: 285px;
+          float: left;
+          height: 450px;
+          overflow: hidden;
+          margin: 50px 10px;
+          padding: 20px;
+          border: 3px solid bisque; }
+          html body .todo main div:hover {
+            box-shadow: 0 0 2px 4px GoldenRod, 0 0 4px 8px #ba613b;
+            overflow: scroll; }
+          html body .todo main div:active {
+            /* lightyellow PeachPuff AntiqueWhite BurlyWood */
+            background: AntiqueWhite;
+            position: fixed;
+            top: -15px;
+            left: 130px;
+            z-index: 100;
+            width: 70%;
+            height: 70%; }
+          html body .todo main div h1 {
+            color: #556055;
+            font-weight: bold;
+            text-shadow: 0 0 4px aliceBlue;
+            text-align: justify;
+            margin-top: 0;
+            margin-bottom: 25px; }
+          html body .todo main div p {
+            text-shadow: 0 0 4px lightSalmon;
+            text-align: justify; }
+            html body .todo main div p:hover {
+              text-shadow: none; }
+        html body .todo main #periodo-renascentista h1 {
+          font-size: 1.8em; }
+        html body .todo main #secxx h1 {
+          font-size: 1.4em; }
+    html body footer p {
+      color: mintCream;
+      font-size: 0.7rem; }
+
+/* 
+	Media Queries
+*/
+@media only screen and (min-width: 530px) {
+  html body .todo main div {
+    width: 430px; }
+
+  .logo .coral-singing {
+    padding-right: 150px; } }
+@media only screen and (min-width: 790px) {
+  html body .todo .dropdown {
+    width: 90%; }
+    html body .todo .dropdown #drop1, html body .todo .dropdown #drop2 {
+      width: 230px;
+      float: left; }
+  html body .todo main div {
+    width: 295px; }
+
+  .logo .coral-singing {
+    padding-right: 350px; }
+
+  .nav-principal li, .nav2 li {
+    margin: 0 25px 0 10px; } }
+@media only screen and (min-width: 960px) {
+  html body .todo main div {
+    width: 360px; }
+
+  .logo .coral-singing {
+    padding-right: 500px; }
+
+  .nav-principal li, .nav2 li {
+    margin: 0 25px 0 45px; } }
+@media only screen and (min-width: 1160px) {
+  html body .todo main div {
+    width: 295px; }
+
+  .logo .coral-singing {
+    padding-right: 690px; }
+
+  .nav-principal li, .nav2 li {
+    margin: 0 25px 0 90px; } }
+@media only screen and (min-width: 1210px) {
+  html body .todo main div {
+    width: 480px; }
+
+  .logo .coral-singing {
+    padding-right: 850px; }
+
+  .nav-principal li, .nav2 li {
+    margin: 0 25px 0 120px; } }
+@media only screen and (min-width: 1400px) {
+  html body .todo main div {
+    width: 340px; }
+
+  .logo .coral-singing {
+    padding-right: 1150px; }
+
+  .nav-principal li, .nav2 li {
+    margin: 0 25px 0 150px; } }
+
+/*# sourceMappingURL=coral-historico-estilo-flexbox.css.map */

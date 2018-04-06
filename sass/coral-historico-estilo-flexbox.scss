@@ -1,0 +1,310 @@
+/*  
+	linear-gradient(lemonChiffon, linen, paleGoldenRod)
+	radial-gradient(bisque, linen)
+	LightSlateGray
+	cadetBlue
+*/
+$background-color-body: cadetBlue;
+$color-body: black;
+
+/* radial-gradient(bisque, linen), 
+   linear-gradient(linen, lemonChiffon, paleGoldenRod)
+    linear-gradient(linen, aliceblue, lemonChiffon)
+*/
+$background-color-todo:  linear-gradient(linen, aliceblue, linen);
+
+/* 
+   radial-gradient(linen, mintCream, bisque) 
+   linear-gradient(paleGoldenRod, white, darkkhaki)
+*/
+$background-color-header: linear-gradient(paleGoldenRod, white, paleGoldenRod);
+$color-header:  #516b51;
+
+	/* lightsalmon */
+$color-main: #556055;
+$color-main-aux: #16b1ba;
+$color-main-shadow: lightSalmon;
+
+$color-h1: #1b231b;
+
+$tooltip-brasilia-color: #fff;
+$tooltip-brasilia-backcolor: darkOliveGreen;
+
+html {
+	font-size: 16px;
+	
+	body {
+		font-family: 'Quattrocento', serif;
+		background: $background-color-body; 
+					/* $color-main $color-main-aux*/
+		color: $color-main; 
+		width: 100%;
+
+		.logo { 
+			display: flex; 
+			flex-wrap: wrap; 
+			.coral-singing {
+				font-family: 'Courgette', cursive;
+				font-size: 1rem;
+				font-weight: bold;
+				color: mintCream;
+				margin-top: 10px;
+				margin-right: 75px;
+			}
+			.social1 ul {
+				list-style: none; padding-left: 0;
+			}
+			.social1 ul { margin-top: 10px; }
+			.social1 li  { 
+				display: inline; 
+				float: right; 
+				padding: 0 5px 0 5px;
+			}
+			.social1 img { box-shadow: 0 0 1px 1px aliceBlue; }
+		}		
+		
+		.social2 {
+			ul { list-style: none; padding-left: 0;  }
+			li { 
+				display: inline; 
+				float: right; 
+				padding-right: 10px;
+			}
+			img { box-shadow: 0 0 1px 1px aliceBlue; }
+		}
+		
+		.todo {
+			background: $background-color-todo;
+			
+			width: 95%;
+			border-radius: 15px 15px 15px 15px;
+
+			header {
+				background: $background-color-header;
+				border-radius: 15px 15px 0 0;
+				color: $color-header;
+				h1, h2 {
+					font-family: 'Courgette', cursive;
+					font-weight: bold;
+					padding: 10px; 
+					text-align: center;
+				}
+				h1 { font-size: 2rem; margin-top: 10px; margin-bottom: 0; padding: 5px; }
+				h2 { font-size: 1.7rem; margin-top: 0; padding-bottom: 25px; }
+			}			
+			.nav-principal, .nav2  {
+				background: aliceblue;
+				line-height: 30px;
+				text-shadow: 0 0 0.3px lightsalmon;
+				ul { list-style: none; }
+				li { display: inline; padding: 5px; }
+				a { color: black; text-decoration: none; }
+				&:hover { text-decoration: underline; }
+			}
+			.nav2 { margin-top: 80px; position: relative; bottom: 15px; clear: left; }
+
+			.div-menu {
+				figure { display: inline; margin-left: 10px; margin-bottom: 0; }
+				img { opacity: 0.8; position: relative; top: 5px; 
+					&:hover { box-shadow: 0 0 4px darkkhaki; }
+				}
+				figcaption {
+					font-family: 'Courgette', cursive;
+					color: #5f665f; 
+								/* , 0 0 4px #ba613b */
+					text-shadow: 0 0 2px GoldenRod;
+					position: relative;
+					bottom: 23px;
+					left: 23px;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 1rem;
+					z-index: 10;
+					/* opacity: 0.7; */
+				}
+			}
+			.dropdown {
+				font-size: 0.9rem;
+							/* linen */
+				background: none;
+				position: relative;
+				bottom: 35px;
+				left: 65px;
+				width: 230px;
+				#drop1, #drop2 {  
+					list-style: none; 
+					margin-top: 0; 
+					margin-bottom: 0;
+					li { padding-bottom: 5px; }
+				}
+				
+				a { 
+					font-family: 'Courgette', cursive;
+					/* $color-header $color-body darkGray */
+					color: #556055; 
+					font-weight: bold;
+					text-decoration: none;
+				/* mintCream orange #00005b oliveDrab GoldenRod */
+					text-shadow: 0 0 2px GoldenRod, 0 0 4px #ba613b;
+				}
+			}
+
+			main { 
+				clear: left;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				div { 
+					width: 285px; 
+					float: left; 
+					height: 450px;
+					overflow: hidden;
+					margin: 50px 10px;
+					padding: 20px;
+					border: 3px solid bisque;
+					&:hover { box-shadow: 0 0 2px 4px GoldenRod, 0 0 4px 8px #ba613b; overflow: scroll; }
+					&:active {
+						/* lightyellow PeachPuff AntiqueWhite BurlyWood */
+						background: AntiqueWhite;
+						position: fixed;
+						top: -15px;
+						left: 130px;
+						z-index: 100;
+						width: 70%;
+						height: 70%;
+					}
+					h1 {
+						color: #556055;
+						font-weight: bold;
+						text-shadow: 0 0 4px aliceBlue;
+						text-align: justify; 
+						margin-top: 0;
+						margin-bottom: 25px;
+					}
+					p { 
+						text-shadow: 0 0 4px $color-main-shadow; 
+						text-align: justify;
+						&:hover { text-shadow: none; }
+					}
+				}
+				#periodo-renascentista h1 { font-size: 1.8em; }
+				#secxx h1 { font-size: 1.4em; }	
+			}
+		}
+		footer p { color: mintCream; font-size: 0.7rem; }
+	}
+}
+
+/* 
+	Media Queries
+*/
+@media only screen and (min-width: 530px) {
+	html body .todo main div { width: 430px; }
+
+	.logo .coral-singing {
+		padding-right: 150px;
+	}
+}
+
+@media only screen and (min-width: 790px) {
+	html body .todo {
+		.dropdown {
+			width: 90%;
+			#drop1, #drop2 {
+				width: 230px;
+				float: left; 
+			}
+		}
+		main div { 
+			width: 295px; 
+		}
+	}
+	
+	.logo .coral-singing {
+		padding-right: 350px;
+	}
+	.nav-principal li, .nav2 li {
+		margin: 0 25px 0 10px;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	html body .todo main div { width: 360px; }
+	
+	.logo .coral-singing {
+		padding-right: 500px; 
+	}
+	
+	.nav-principal li, .nav2 li {
+		margin: 0 25px 0 45px; 
+		
+	}
+}
+
+@media only screen and (min-width: 1160px) {
+	html body .todo main div { width: 295px; }
+	
+	.logo .coral-singing {
+		padding-right: 690px; 
+	}
+	
+	.nav-principal li, .nav2 li {
+		margin: 0 25px 0 90px; 
+	}
+}
+
+@media only screen and (min-width: 1210px) {
+	html body .todo main div { width: 480px; }
+	
+	.logo .coral-singing {
+		padding-right: 850px; 
+	}
+	
+	.nav-principal li, .nav2 li {
+		margin: 0 25px 0 120px; 
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	html body .todo main div { 
+		width: 340px; 
+	}
+	
+	.logo .coral-singing {
+		padding-right: 1150px; 
+	}
+	
+	.nav-principal li, .nav2 li {
+		margin: 0 25px 0 150px; 	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

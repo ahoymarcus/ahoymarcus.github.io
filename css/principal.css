@@ -304,6 +304,7 @@ footer p {
 	main div {
 		width: 295px;
 	}
+	.beethoven h1 { font-size: 1.79em; margin-bottom: 27px; }
 	
 	.coralSinging {
 		margin-right: 770px;
@@ -331,9 +332,11 @@ footer p {
 @media only screen and (min-width: 1490px) {
 	main div {
 		width: 420px;
-		
 		margin: 0 15px 80px 30px;
 	}
+	.bach h1 { padding-bottom: 30px; }
+	.vivaldi h1 { padding-bottom: 65px; }
+	.beethoven h1 { padding-bottom: 30px; }
 	
 	.coralSinging {
 		margin-right: 1230px;

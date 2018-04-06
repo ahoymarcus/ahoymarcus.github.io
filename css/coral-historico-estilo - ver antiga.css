@@ -1,0 +1,394 @@
+/*
+	Autor: Marcus Vinícius da Silveira Richa
+	Estilo: para site de música coral.
+*/
+body {
+			/* #7fffd4-aquamarine #f5f5dc-beige #ffe4c4-bisque #faf0e6-linen*/
+	background-color: linen; 
+	
+	width: 100%;
+	height: 100%;
+	
+	min-width: 835px;	
+}
+.todo {
+			/* #5f9ea0-cadetblue bisque-#ffe4c4-(255,228,196)*/
+	/* background-color: bisque; */
+
+	width: 98%;
+	height: 100%;
+	margin: 0 5px 5px 5px;;
+}
+nav, main, footer {
+	font-family: 'Quattrocento', serif;
+}
+
+.coralSinging {
+	display: inline;
+	
+	
+	position: relative;
+	top: 50px;
+	
+}
+.coralSinging  h1 {
+	font-family: 'Courgette', cursive;
+	color: lightsalmon;
+	font-size: 300%;
+	font-weight: bold;
+	
+	display: inline;
+	
+}
+
+
+header { 
+				/* azure-#f0ffff salmon-#fa8072*/
+	background: radial-gradient(linen, white, lightsalmon);
+	
+	text-align: center;
+	margin-top: 5px;
+	height: 410px; 
+	font-family: 'Courgette', cursive;
+}
+header h1 { 
+			/* sienna-#a0522d */
+	color: #660000;
+	
+	font-size: 850%; text-align: center; text-transform: uppercase; padding-top: 40px; height: 70px; 
+
+}
+header h2 { 
+			/* sienna-#a0522d */
+	color: #660000;
+	font-size: 310%; text-align: center; display: inline;
+	
+}
+
+.procura { 
+	display: none;		
+	color: bisque;
+	font-weight: bold;
+	position: absolute;
+	top: 90px; 
+	right: 30px; 
+}
+
+nav ul {
+	list-style-type: none;
+	
+}
+.nav-principal {
+			/* aliceblue-#f0f8ff honeydew-#f0fff0 */
+	background: aliceblue; 
+	line-height: 30px;
+	
+			/* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+	text-shadow: 0 0 0.5px lightsalmon;
+}
+.nav-principal ul li {
+	display: inline;
+	padding: 5px 15px 15px 15px;
+}
+.nav-principal a {
+	color: black;
+	text-decoration: none;
+	
+}
+
+.nav2 ul li {
+	display: inline;
+	float: left;
+	
+	padding: 40px 5px 5px 5px;
+}
+.nav2 a {
+	color: linen;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+.historia {
+	display: flex;
+	flex-wrap: wrap;
+			
+	justify-content: center; 
+	
+				/* Veja que o gradiente pode ter o sentido diagonal tb: to bottom right... */
+	/* background: linear-gradient(bisque, aliceblue); */
+	/* background: radial-gradient(bisque, aliceblue, bisque); */
+	background: radial-gradient(bisque, linen);
+}
+
+.divInterna {
+				/* lightsalmon-#ffa07a paleturquoise-#afeeee */
+	background-color: lightsalmon;
+	opacity: 0.6;
+	
+			/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+	box-shadow: 0 0 15px 10px aliceblue;
+	
+	width: 350px;
+	height: 450px;
+	overflow: scroll;
+	
+	margin: 50px;
+	margin-left: 60px;
+	padding: 10px;
+	border: 3px solid bisque;
+	
+	float: left;
+	
+	font-weight: bold;
+	
+}
+.divInterna:hover {
+	background-color: lightsalmon;
+	opacity: 0.8;
+	
+	word-spacing: 6px;
+	line-height: 23px;
+	position: relative;
+	width: 450px;
+	height: 550px;
+}
+.divInterna a {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
+.divInterna h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.divInterna p {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.auxiliar ul {
+	position: fixed;
+	top: -15px;
+	left: 100px;	
+}
+.auxiliar li {
+	
+	list-style: none;
+	text-align: center;
+	border: 1px solid salmon;
+	background-color: aliceblue;
+	display: inline;
+}
+.auxiliar a {
+	color: salmon; 
+	font-weight: bold;
+	
+	padding: 5px 10px;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+footer {
+			/* azure-#f0ffff salmon-#fa8072*/ 
+	background: lightsalmon;
+	height: 120px;
+	clear: left;
+	
+}
+.rodape {
+	display: flex;		
+	align-items: flex-end;
+	
+}
+footer p {
+	color: linen;
+	
+}
+
+.social1, .social2 {
+			/* color: bisque !important; 
+	font-weight: bold; */
+	font-family: 'Quattrocento', serif;
+	/* font-family: 'Courgette', cursive; */
+}
+.social1  ul, .social2  ul {
+	list-style-type: none;
+}
+.social1 li {
+	display: inline;
+	float: right;
+	padding: 8px 10px 0 10px;
+}
+ .social2 li {
+	display: inline;
+	padding: 40px 15px 5px 15px;
+	float: right;
+}
+.social1 a, .social2 a {
+				/* bisque-#ffe4c4 */
+	color: lightsalmon;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+/*
+	Media Queries
+*/
+@media only screen and (max-width: 880px) {
+	header h1  {
+		font-size: 800%;
+	}
+	
+	header h2 {
+		font-size: 280%;
+	}
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.coralSinging {
+		top: 55px;
+		
+		
+	}
+	
+	header {
+			margin-bottom: 35px;
+	}
+	
+	header h1  {
+		clear: left;
+		display: block;
+		padding-top: 25px;
+	}
+	header h2 {
+		
+	}
+	
+	.divInterna {
+		background-color: lightsalmon;
+		
+		width: 45%;
+		word-spacing: 6px;
+		line-height: 28px; 
+		margin-left: 0;
+	}
+	.divInterna:hover {
+		background-color: lightsalmon;
+		
+		word-spacing: 6px;
+		line-height: 28px;
+		position: inherit;
+		width: 55%;
+	}
+	.divInterna h2 {
+		font-size: 32px;
+		color: #660000;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		line-height: 32px;
+	}
+	.divInterna p { 
+		font-size: 26px;
+		letter-spacing: 2px;
+		color: #660000;
+	}
+	
+	.auxiliar ul {
+		position: fixed;
+		top: 610px;
+		left: -40px;
+		
+	}
+	.auxiliar li {
+		list-style: none;
+		text-align: center;
+		border: 1px solid salmon;
+		background-color: aliceblue;
+		display: block;
+	}
+	.auxiliar a {
+		color: salmon; 
+		font-weight: bold;
+		
+		padding: 0 5px;
+		line-height: 80px;
+		text-decoration: none;
+		font-size: 20px; 
+	}
+	
+	.nav-principal {
+		height: 40px;
+		
+		 
+		font-size: 28px;
+	}
+	.nav-principal ul {
+		padding-left: 0;
+	}
+	.nav-principal ul li {
+		line-height: 40px;
+		margin-left: 0;
+		padding: 15px 5px 15px 5px;
+	}
+	
+	.nav2 {
+		font-size: 26px;
+	}
+	.nav2 ul {
+		margin-left: 0;
+	}
+	.nav2 ul  li {
+		
+		
+		font-family: 'Courgette', cursive; 
+		/* background-color: linen;
+		border: 1px solid bisque; */
+	}
+	.nav2 a {
+		
+		text-decoration: underline;
+	}
+	
+	.social1 img, .social2 img {
+		box-shadow: 0 0 1px 1px aliceblue;
+	}
+	.social1 {
+		
+		font-size: 24px;
+	}
+	.social1 ul {
+		
+	}
+	
+	.social2 {
+		font-size: 16px;
+		clear: left;
+	}
+	.social2 li {
+		float: left;
+		
+		
+		/* border: 1px solid bisque;
+		background-color: linen; */
+	}
+	
+	footer {
+		height: 250px;
+	}
+	
+	footer p {
+		position: relative;
+		top: 30px;
+	}
+	
+}
+
+
+
+
+
