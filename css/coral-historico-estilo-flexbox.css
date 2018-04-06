@@ -153,15 +153,6 @@ html {
           html body .todo main div:hover {
             box-shadow: 0 0 2px 4px GoldenRod, 0 0 4px 8px #ba613b;
             overflow: scroll; }
-          html body .todo main div:active {
-            /* lightyellow PeachPuff AntiqueWhite BurlyWood */
-            background: AntiqueWhite;
-            position: fixed;
-            top: -15px;
-            left: 130px;
-            z-index: 100;
-            width: 70%;
-            height: 70%; }
           html body .todo main div h1 {
             color: #556055;
             font-weight: bold;
@@ -199,6 +190,15 @@ html {
       float: left; }
   html body .todo main div {
     width: 295px; }
+    html body .todo main div:active {
+      /* lightyellow PeachPuff AntiqueWhite BurlyWood */
+      background: AntiqueWhite;
+      position: fixed;
+      top: -15px;
+      left: 130px;
+      z-index: 100;
+      width: 70%;
+      height: 70%; }
 
   .logo .coral-singing {
     padding-right: 350px; }
