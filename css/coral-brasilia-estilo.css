@@ -166,7 +166,8 @@ main {
       font-size: 0.9rem;
       color: #516b51;
       font-weight: bold;
-      text-shadow: 0.5px 0.5px burlyWood; }
+      text-shadow: 0.5px 0.5px burlyWood;
+      text-align: justify; }
     main figure a {
       color: aliceBlue;
       text-decoration: none; }
@@ -223,9 +224,9 @@ main {
     width: 40%;
     margin-left: auto;
     margin-right: auto; }
-  main picture img:hover, main .ary-barroso figure #ary-familia:hover {
+  main picture img:hover, main figure #figura-ampliar:hover {
     box-shadow: 0 0 2px 4px #516b51, 0 0 4px 8px burlyWood; }
-  main picture img:active, main .ary-barroso figure #ary-familia:active {
+  main picture img:active, main figure #figura-ampliar:active {
     background: AntiqueWhite;
     position: fixed;
     top: -15px;
@@ -300,8 +301,8 @@ main {
       border-color: darkOliveGreen transparent transparent transparent; }
   .tooltip .tooltiptext-large {
     visibility: hidden;
-    width: 250px;
-    height: 60px;
+    width: 220px;
+    height: 50px;
     background-color: darkOliveGreen;
     color: #fff;
     font-size: 0.8rem;

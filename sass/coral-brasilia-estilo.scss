@@ -150,7 +150,7 @@ main {
 	figure { 
 		margin: 16px 15px 16px 0; 
 		img { width: 100%; }
-		figcaption { font-size: 0.9rem; color: $color-header; font-weight: bold; text-shadow: 0.5px 0.5px burlyWood; }
+		figcaption { font-size: 0.9rem; color: $color-header; font-weight: bold; text-shadow: 0.5px 0.5px burlyWood; text-align: justify; }
 		a { color: aliceBlue; text-decoration: none; }
 	}
 	video { width: 100%; }
@@ -202,8 +202,8 @@ main {
 		#junker-programa-2001 img { display: block; width: 40%; margin-left: auto; margin-right: auto; }
 		
 	}
-	picture img:hover, .ary-barroso figure #ary-familia:hover { box-shadow: 0 0 2px 4px #516b51, 0 0 4px 8px burlyWood; }
-	picture img:active, .ary-barroso figure #ary-familia:active {
+	picture img:hover, figure #figura-ampliar:hover { box-shadow: 0 0 2px 4px #516b51, 0 0 4px 8px burlyWood; }
+	picture img:active, figure #figura-ampliar:active {
 		background: AntiqueWhite;
 		position: fixed;
 		top: -15px;
@@ -282,8 +282,8 @@ main {
 	}
 	.tooltiptext-large {
 		visibility: hidden;
-		width: 250px;
-		height: 60px;
+		width: 220px;
+		height: 50px;
 		background-color: $tooltip-brasilia-background-color;
 		color: $tooltip-brasilia-color;
 		font-size: 0.8rem;
