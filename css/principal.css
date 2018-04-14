@@ -84,18 +84,18 @@ header h1, header h2 {
 	
 }
 header h1 {
-	font-size: 2rem;
+	font-size: 2.4rem;
 	
 	margin-top: 10px;
 	margin-bottom: 0;
 	padding: 5px;
-	
+	margin-bottom: 10px;
 }
 header h2 {
-	font-size: 1rem;
+	font-size: 1.3rem;
 	
 	margin-top: 0;
-	margin-bottom: 5px 5px 5px 0;
+	margin-bottom: 20px;
 }
 header small {
 	visibility: hidden;

@@ -72,7 +72,13 @@ html {
         html body .todo header h2 {
           font-size: 1.7rem;
           margin-top: 0;
-          padding-bottom: 25px; }
+          margin-bottom: 5px;
+          padding-bottom: 0; }
+        html body .todo header p {
+          color: black;
+          text-align: center;
+          margin-top: 0;
+          padding-bottom: 20px; }
       html body .todo .nav-principal, html body .todo .nav2 {
         background: aliceblue;
         line-height: 30px;

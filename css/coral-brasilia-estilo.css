@@ -136,6 +136,8 @@ header {
     text-shadow: 0 0 8px GoldenRod, 0 0 16px #ba613b; }
 
 main {
+  display: flex;
+  flex-wrap: wrap;
   color: black;
   /* $color-main-aux */ }
   main div {
@@ -354,6 +356,8 @@ footer p {
     width: 295px; }
   main blockquote {
     width: 240px; }
+  main .david-junker h1 {
+    font-size: 1.50em; }
 
   .logo .coral-singing {
     padding-right: 350px; }
@@ -369,6 +373,9 @@ footer p {
     width: 80%; }
   main .david-junker #reduzir-pic img {
     width: 70%; }
+  main .david-junker h1 {
+    font-size: 1.706em;
+    margin-bottom: 30px; }
   main .ary-barroso h1 {
     font-size: 2.2em;
     margin-bottom: 50px; }
@@ -389,7 +396,7 @@ footer p {
     font-size: 2.1em;
     margin-bottom: 55px; }
   main .david-junker h1 {
-    margin-bottom: 32px; }
+    margin-bottom: 38px; }
 
   .logo .coral-singing {
     padding-right: 690px; }
@@ -421,7 +428,7 @@ footer p {
     margin-bottom: 40px; }
   main .david-junker h1 {
     padding-bottom: 35px;
-    margin-bottom: 15px; }
+    margin-bottom: 23px; }
   main .david-junker picture p {
     width: 60%; }
   main .david-junker #reduzir-pic img {

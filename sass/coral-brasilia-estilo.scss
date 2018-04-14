@@ -136,6 +136,8 @@ header {
 }
 
 main { 
+	display: flex; 
+	flex-wrap: wrap;
 	color: black; /* $color-main-aux */
 	div { width: 285px; float: left; margin: 0 15px 80px 10px; }
 	h1 { color: $color-h1; text-align: justify; margin-top: 0; }
@@ -341,6 +343,7 @@ footer p { color: $color-header; font-size: 0.7rem; }
 			width: 295px;
 		}
 		blockquote { width: 240px; }
+		.david-junker h1 { font-size: 1.50em; }
 	}
 	.logo .coral-singing {
 		padding-right: 350px;
@@ -359,6 +362,7 @@ footer p { color: $color-header; font-size: 0.7rem; }
 		.david-junker {
 			picture p { width: 80%; }
 			#reduzir-pic img { width: 70%; }
+			h1 { font-size: 1.706em; margin-bottom: 30px; }
 		}
 		.ary-barroso h1{ font-size: 2.2em; margin-bottom: 50px; }
 	}
@@ -381,7 +385,7 @@ footer p { color: $color-header; font-size: 0.7rem; }
 		blockquote { width: 240px; }
 		.villa-lobos h1{ margin-bottom: 60px; }
 		.ary-barroso h1{ font-size: 2.1em; margin-bottom: 55px; }
-		.david-junker h1 { margin-bottom: 32px; }
+		.david-junker h1 { margin-bottom: 38px; }
 	}
 	
 	.logo .coral-singing {
@@ -420,7 +424,7 @@ footer p { color: $color-header; font-size: 0.7rem; }
 		.villa-lobos h1 { padding-bottom: 0; margin-bottom: 50px; }
 		.ary-barroso h1 { padding-bottom: 40px; margin-bottom: 40px; }
 		.david-junker { 
-			h1 { padding-bottom: 35px; margin-bottom: 15px; }
+			h1 { padding-bottom: 35px; margin-bottom: 23px; }
 			picture p { width: 60%; }
 			#reduzir-pic img { width: 50%; }
 		}
