@@ -28,10 +28,11 @@ body {
 	border-radius: 15px 15px 15px 15px;
 }
 
-.logo {
+.flex {
 	display: flex;
 	flex-wrap: wrap;
 }
+.nav-flex { justify-content: space-around; }
 
 .coralSinging {
 	font-family: 'Courgette', cursive;
@@ -116,8 +117,13 @@ header small {
 	text-shadow: 0 0 0.3px lightsalmon;
 }
 .nav-principal ul, .nav2 ul {
-	list-style-type: none;
+	list-style-type: none; 
+	margin: 0;
 }
+.nav-principal ul:first-of-type, .nav2 ul:first-of-type {
+	margin-top: 16px;
+} 
+
 .nav-principal li, .nav2 li {
 	display: inline;
 	

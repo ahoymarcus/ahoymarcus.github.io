@@ -109,6 +109,8 @@ footer p {
 	font-weight: bold;
 }
 
+.flex { display: flex; flex-wrap: wrap; }
+.nav-flex { justify-content: space-around; }
 .auxiliar li {
 	font-size: 22px;
 }

@@ -21,26 +21,26 @@ html {
     /* $color-main $color-main-aux*/
     color: #556055;
     width: 100%; }
-    html body .logo {
+    html body .flex {
       display: flex;
       flex-wrap: wrap; }
-      html body .logo .coral-singing {
+      html body .flex .coral-singing {
         font-family: 'Courgette', cursive;
         font-size: 1rem;
         font-weight: bold;
         color: mintCream;
         margin-top: 10px;
         margin-right: 75px; }
-      html body .logo .social1 ul {
+      html body .flex .social1 ul {
         list-style: none;
         padding-left: 0; }
-      html body .logo .social1 ul {
+      html body .flex .social1 ul {
         margin-top: 10px; }
-      html body .logo .social1 li {
+      html body .flex .social1 li {
         display: inline;
         float: right;
         padding: 0 5px 0 5px; }
-      html body .logo .social1 img {
+      html body .flex .social1 img {
         box-shadow: 0 0 1px 1px aliceBlue; }
     html body .social2 ul {
       list-style: none;
@@ -84,7 +84,10 @@ html {
         line-height: 30px;
         text-shadow: 0 0 0.3px lightsalmon; }
         html body .todo .nav-principal ul, html body .todo .nav2 ul {
-          list-style: none; }
+          list-style: none;
+          margin: 0; }
+          html body .todo .nav-principal ul:first-of-type, html body .todo .nav2 ul:first-of-type {
+            margin-top: 16px; }
         html body .todo .nav-principal li, html body .todo .nav2 li {
           display: inline;
           padding: 5px; }
@@ -93,6 +96,8 @@ html {
           text-decoration: none; }
         html body .todo .nav-principal:hover, html body .todo .nav2:hover {
           text-decoration: underline; }
+        html body .todo .nav-principal .nav-flex, html body .todo .nav2 .nav-flex {
+          justify-content: space-around; }
       html body .todo .nav2 {
         margin-top: 80px;
         position: relative;

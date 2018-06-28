@@ -40,7 +40,7 @@ html {
 		color: $color-main; 
 		width: 100%;
 
-		.logo { 
+		.flex { 
 			display: flex; 
 			flex-wrap: wrap; 
 			.coral-singing {
@@ -97,10 +97,11 @@ html {
 				background: aliceblue;
 				line-height: 30px;
 				text-shadow: 0 0 0.3px lightsalmon;
-				ul { list-style: none; }
+				ul { list-style: none; margin: 0; &:first-of-type { margin-top: 16px; } }
 				li { display: inline; padding: 5px; }
 				a { color: black; text-decoration: none; }
 				&:hover { text-decoration: underline; }
+				.nav-flex { justify-content: space-around; }
 			}
 			.nav2 { margin-top: 80px; position: relative; bottom: 15px; clear: left; }
 
