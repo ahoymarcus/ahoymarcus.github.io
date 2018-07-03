@@ -79,15 +79,41 @@ html {
           text-align: center;
           margin-top: 0;
           padding-bottom: 20px; }
+      html body .todo .nav-collapsible {
+        font-size: 15px;
+        background-color: aliceblue;
+        color: black;
+        text-shadow: 0 0 0.3px lightsalmon;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase; }
+        html body .todo .nav-collapsible:hover {
+          background-color: rgba(164, 215, 216, 0.6);
+          /*#a4d7d8*/ }
+      html body .todo .active {
+        background-color: rgba(164, 215, 216, 0.6);
+        /*#a4d7d8*/ }
+      html body .todo .nav-collapsible-primary {
+        margin-top: 16px; }
+      html body .todo .nav-collapsible-secundary {
+        margin-top: 80px;
+        position: relative;
+        bottom: 15px; }
       html body .todo .nav-principal, html body .todo .nav2 {
+        display: none;
         background: aliceblue;
         line-height: 30px;
         text-shadow: 0 0 0.3px lightsalmon; }
         html body .todo .nav-principal ul, html body .todo .nav2 ul {
           list-style: none;
-          margin: 0; }
+          margin: 0;
+          padding-left: 15px; }
           html body .todo .nav-principal ul:first-of-type, html body .todo .nav2 ul:first-of-type {
-            margin-top: 16px; }
+            /*margin-top: 16px;*/ }
         html body .todo .nav-principal li, html body .todo .nav2 li {
           display: inline;
           padding: 5px; }
@@ -96,13 +122,14 @@ html {
           text-decoration: none; }
         html body .todo .nav-principal:hover, html body .todo .nav2:hover {
           text-decoration: underline; }
-        html body .todo .nav-principal .nav-flex, html body .todo .nav2 .nav-flex {
+        html body .todo .nav-principal .nav-flex-around, html body .todo .nav2 .nav-flex-around {
           justify-content: space-around; }
+        html body .todo .nav-principal .nav-flex-start, html body .todo .nav2 .nav-flex-start {
+          justify-content: flex-start; }
       html body .todo .nav2 {
-        margin-top: 80px;
         position: relative;
         bottom: 15px;
-        clear: left; }
+        /*margin-top: 80px; clear: left;*/ }
       html body .todo .div-menu figure {
         display: inline;
         margin-left: 10px;

@@ -71,18 +71,48 @@ header {
     margin-top: 0;
     padding-bottom: 25px; }
 
-.nav-flex {
+.nav-collapsible {
+  font-size: 15px;
+  background-color: aliceblue;
+  color: black;
+  text-shadow: 0 0 0.3px lightsalmon;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase; }
+
+.nav-collapsible-primary {
+  margin-top: 16px; }
+
+.nav-collapsible-secundary {
+  margin-top: 80px;
+  position: relative;
+  bottom: 15px; }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .nav-collapsible:hover {
+  background-color: #eff1ed; }
+
+.nav-flex-around {
   justify-content: space-around; }
 
+.nav-flex-start {
+  justify-content: flex-start; }
+
 .nav-principal, .nav2 {
+  display: none;
   background: aliceblue;
   line-height: 30px;
   text-shadow: 0 0 0.3px lightsalmon; }
   .nav-principal ul, .nav2 ul {
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    padding-left: 15px; }
     .nav-principal ul:first-of-type, .nav2 ul:first-of-type {
-      margin-top: 16px; }
+      /*margin-top: 16px;*/ }
   .nav-principal li, .nav2 li {
     display: inline;
     padding: 5px; }
@@ -93,10 +123,9 @@ header {
     text-decoration: underline; }
 
 .nav2 {
-  margin-top: 80px;
   position: relative;
   bottom: 15px;
-  clear: left; }
+  /*margin-top: 80px; clear: left;*/ }
 
 .div-menu figure {
   display: inline;

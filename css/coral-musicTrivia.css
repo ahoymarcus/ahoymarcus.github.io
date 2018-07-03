@@ -38,7 +38,7 @@ button { cursor: pointer; }
 
 header, footer { background-color: #748c40; width: 92%; margin: 30px auto 50px auto; border-radius: 15px; }
 header { height: 190px; }
-footer { height: 200px; }
+footer { height: 235px; }
 header h1 { color: #f3f3a8; font-size: 2.3rem; text-shadow: 1px 1px rgb(237,20,61,0.2); padding: 10px 0; margin-bottom: 10px; }
 header form { float: right; margin-right: 10px; margin-bottom: 0px; }
 header form input { padding: 2px; border-radius: 5px; }
