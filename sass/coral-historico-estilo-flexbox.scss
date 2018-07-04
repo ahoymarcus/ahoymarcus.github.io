@@ -54,16 +54,20 @@ html {
 				margin-right: 75px;
 			}
 			.social1 ul {
-				list-style: none; padding-left: 0;
+				list-style: none; padding-left: 0; margin-top: 10px; padding-right: 5px; margin-right: 5px;
 			}
-			.social1 ul { margin-top: 10px; }
+			
 			.social1 li  { 
 				display: inline; 
 				float: right; 
 				padding: 0 5px 0 5px;
 			}
 			.social1 img { box-shadow: 0 0 1px 1px aliceBlue; }
-		}		
+		}
+		.flex-direction { flex-direction: column; }
+		.flex-around { justify-content: space-around; }
+		.flex-between { justify-content: space-between; }
+		/*.flex-start { justify-content: flex-start; }*/
 		
 		.social2 {
 			ul { list-style: none; padding-left: 0;  }
@@ -109,7 +113,7 @@ html {
 			.nav-collapsible:after { content: '\02795'; /*Unicode character for "plus" sign (+)*/ font-size: 13px; color: black; float: right; margin-left: 5px; }
 			.active:after { /*Unicode character for "minus" sign (-)*/ content: '\2796'; }
 			
-			.nav-collapsible-primary { margin-top: 16px; }
+			/*.nav-collapsible-primary { margin-top: 16px; }*/
 			button.nav, .nav-collapsible-secundary { 
 				margin-top: 80px;
 				position: relative;
@@ -129,17 +133,18 @@ html {
 				max-height: 0;
 				overflow: hidden;
 				transition: max-height 0.2s ease-out;
-				ul { list-style: none; margin: 0; padding-left: 15px; &:first-of-type { /*margin-top: 16px;*/ } }
-				li { display: inline; padding: 5px; }
+				ul { list-style: none; margin: 0; padding-left: 15px; margin-bottom: 10px; &:first-of-type { /*margin-top: 16px;*/ } }
+				li { display: inline; padding: 2px; }
 				a { color: black; text-decoration: none; }
 				&:hover { text-decoration: underline; }
 				.flex-direction { flex-direction: column; }
-				.nav-flex-space-around { justify-content: space-around; }
-				/*.nav-flex-start { justify-content: flex-start; }*/
+				.flex-space-around { justify-content: space-around; }
+				/*.flex-start { justify-content: flex-start; }*/
 			}
 			.nav2 { position: relative; bottom: 15px;  /*margin-top: 80px; clear: left;*/ }
 
 			.div-menu {
+				margin-top: 15px; 
 				figure { display: inline; margin-left: 10px; margin-bottom: 0; }
 				img { opacity: 0.8; position: relative; top: 5px; 
 					&:hover { box-shadow: 0 0 4px darkkhaki; }

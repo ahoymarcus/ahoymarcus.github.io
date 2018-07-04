@@ -51,9 +51,9 @@ body {
 		margin-right: 75px;
 	}
 	.social1 ul {
-		list-style: none; padding-left: 0;
+		list-style: none; padding-left: 0; margin-top: 10px; padding-right: 5px; margin-right: 5px;
 	}
-	.social1 ul { margin-top: 10px; }
+	
 	.social1 li  { 
 		display: inline; 
 		float: right; 
@@ -61,6 +61,10 @@ body {
 	}
 	.social1 img { box-shadow: 0 0 1px 1px aliceBlue; }
 }
+.flex-direction { flex-direction: column; }
+.flex-around { justify-content: space-around; }
+.flex-between { justify-content: space-between; }
+/*.flex-start { justify-content: flex-start; }*/
 
 .social2 {
 	ul { list-style: none; padding-left: 0;  }
@@ -93,7 +97,7 @@ header {
 	text-decoration: none;
 }
 button.nav, .nav-collapsible { font-size: 15px; background-color: aliceblue; color: black; text-shadow: 0 0 0.3px lightsalmon; padding: 18px; width: 100%; border: none; text-align: left; outline: none; cursor: pointer; text-transform: uppercase; }
-.nav-collapsible-primary { margin-top: 16px; }
+/*.nav-collapsible-primary { margin-top: 16px; }*/
 button.nav, .nav-collapsible-secundary { 
 	margin-top: 80px;
 	position: relative;
@@ -116,9 +120,6 @@ button.nav, .nav-collapsible-secundary {
 	content: '\2796';
 }
 
-.flex-direction { flex-direction: column; }
-.nav-flex-space-around { justify-content: space-around; }
-/*.nav-flex-start { justify-content: flex-start; }*/
 .nav-principal, .nav2  {
 	background: aliceblue;
 	line-height: 30px;
@@ -132,9 +133,9 @@ button.nav, .nav-collapsible-secundary {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	ul { list-style: none; margin: 0; padding-left: 15px; &:first-of-type { /*margin-top: 16px;*/ } }
+	ul { list-style: none; margin: 0; padding-left: 15px; margin-bottom: 10px; &:first-of-type { /*margin-top: 16px;*/ } }
 	
-	li { display: inline; padding: 5px; }
+	li { display: inline; padding: 2px; }
 	a { color: black; text-decoration: none; }
 	&:hover { text-decoration: underline; }
 }
@@ -148,12 +149,13 @@ button.nav, .nav-collapsible-secundary {
 	}
 	.nav-principal { margin-top: 16px; }
 	.nav-principal ul:first-of-type {
-		margin-top: 16px; 
+		margin-top: 16px;
 	}
 }
 
 
 .div-menu {
+	margin-top: 15px;
 	figure { display: inline; margin-left: 10px; margin-bottom: 0; }
 	img { opacity: 0.8; position: relative; top: 5px; 
 		&:hover { box-shadow: 0 0 4px darkkhaki; }
