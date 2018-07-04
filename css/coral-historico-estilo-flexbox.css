@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  
 	linear-gradient(lemonChiffon, linen, paleGoldenRod)
 	radial-gradient(bisque, linen)
@@ -21,6 +22,10 @@ html {
     /* $color-main $color-main-aux*/
     color: #556055;
     width: 100%; }
+    html body .clearfix {
+      content: "";
+      display: table;
+      clear: both; }
     html body .flex {
       display: flex;
       flex-wrap: wrap; }
@@ -79,7 +84,10 @@ html {
           text-align: center;
           margin-top: 0;
           padding-bottom: 20px; }
-      html body .todo .nav-collapsible {
+      html body .todo [class*='nav'] a {
+        color: black;
+        text-decoration: none; }
+      html body .todo button.nav, html body .todo .nav-collapsible {
         font-size: 15px;
         background-color: aliceblue;
         color: black;
@@ -91,23 +99,42 @@ html {
         outline: none;
         cursor: pointer;
         text-transform: uppercase; }
-        html body .todo .nav-collapsible:hover {
+        html body .todo button.nav:hover, html body .todo .nav-collapsible:hover {
           background-color: rgba(164, 215, 216, 0.6);
           /*#a4d7d8*/ }
       html body .todo .active {
         background-color: rgba(164, 215, 216, 0.6);
         /*#a4d7d8*/ }
+      html body .todo .nav-collapsible:after {
+        content: '\02795';
+        /*Unicode character for "plus" sign (+)*/
+        font-size: 13px;
+        color: black;
+        float: right;
+        margin-left: 5px; }
+      html body .todo .active:after {
+        /*Unicode character for "minus" sign (-)*/
+        content: '\2796'; }
       html body .todo .nav-collapsible-primary {
         margin-top: 16px; }
-      html body .todo .nav-collapsible-secundary {
+      html body .todo button.nav, html body .todo .nav-collapsible-secundary {
         margin-top: 80px;
         position: relative;
         bottom: 15px; }
       html body .todo .nav-principal, html body .todo .nav2 {
-        display: none;
         background: aliceblue;
         line-height: 30px;
-        text-shadow: 0 0 0.3px lightsalmon; }
+        text-shadow: 0 0 0.3px lightsalmon;
+        /*
+        	Prepara├º├úo para o nav-collapse:
+        	1. Com a propriedade display = "none"
+        	2. com as propriedades max-height, overflow/hidden e transition (animado)
+        */
+        /*display: none;*/
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        /*.nav-flex-start { justify-content: flex-start; }*/ }
         html body .todo .nav-principal ul, html body .todo .nav2 ul {
           list-style: none;
           margin: 0;
@@ -122,10 +149,10 @@ html {
           text-decoration: none; }
         html body .todo .nav-principal:hover, html body .todo .nav2:hover {
           text-decoration: underline; }
-        html body .todo .nav-principal .nav-flex-around, html body .todo .nav2 .nav-flex-around {
+        html body .todo .nav-principal .flex-direction, html body .todo .nav2 .flex-direction {
+          flex-direction: column; }
+        html body .todo .nav-principal .nav-flex-space-around, html body .todo .nav2 .nav-flex-space-around {
           justify-content: space-around; }
-        html body .todo .nav-principal .nav-flex-start, html body .todo .nav2 .nav-flex-start {
-          justify-content: flex-start; }
       html body .todo .nav2 {
         position: relative;
         bottom: 15px;
@@ -214,6 +241,23 @@ html {
 /* 
 	Media Queries
 */
+/*Querie para controlar a navega├º├úo*/
+@media only screen and (min-width: 48em) {
+  /*768*/
+  .nav-collapsible {
+    display: none; }
+
+  html body .todo .nav-principal .flex-direction, html body .todo .nav2 .flex-direction {
+    flex-direction: row; }
+
+  html body .todo .nav-principal, html body .todo .nav2 {
+    max-height: none; }
+
+  .nav-principal {
+    margin-top: 16px; }
+
+  .nav-principal ul:first-of-type {
+    margin-top: 16px; } }
 @media only screen and (min-width: 530px) {
   html body .todo main div {
     width: 430px; }

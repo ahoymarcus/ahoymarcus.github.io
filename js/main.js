@@ -35,13 +35,27 @@ for (k=0; k<navCollapse.length; k++) {
 	navCollapse[k].addEventListener('click', function() {
 		this.classList.toggle('active');
 		var content = this.nextElementSibling;
-		if (content.style.display === 'block') {
-			content.style.display = "none";
+		if (content.style.maxHeight) {
+			content.style.maxHeight = null;
 		} else {
-			content.style.display = "block";
+			content.style.maxHeight = content.scrollHeight + "px";
 		}
 	}); 
 }
+
+
+
+// for (k=0; k<navCollapse.length; k++) {
+	// navCollapse[k].addEventListener('click', function() {
+		// this.classList.toggle('active');
+		// var content = this.nextElementSibling;
+		// if (content.style.display === 'block') {
+			// content.style.display = "none";
+		// } else {
+			// content.style.display = "block";
+		// }
+	// }); 
+// }
 
 
 

@@ -39,6 +39,8 @@ html {
 					/* $color-main $color-main-aux*/
 		color: $color-main; 
 		width: 100%;
+		
+		.clearfix { content: ""; display: table; clear: both; }
 
 		.flex { 
 			display: flex; 
@@ -92,31 +94,48 @@ html {
 				h1 { font-size: 2rem; margin-top: 10px; margin-bottom: 0; padding: 5px; }
 				h2 { font-size: 1.7rem; margin-top: 0; margin-bottom: 5px; padding-bottom: 0; }
 				p { color: black; text-align: center; margin-top: 0; padding-bottom: 20px;}
-			}	
-			.nav-collapsible { 
+			}
+
+			[class*='nav'] a { 
+				color: black;
+				text-decoration: none;
+			}
+			button.nav, .nav-collapsible { 
 				font-size: 15px; background-color: aliceblue; color: black; text-shadow: 0 0 0.3px lightsalmon; padding: 18px; width: 100%; border: none; text-align: left; outline: none; cursor: pointer; text-transform: uppercase; 
 				&:hover { background-color: rgba(164, 215, 216, 0.6); /*#a4d7d8*/ }
 			}
 			.active { background-color: rgba(164, 215, 216, 0.6); /*#a4d7d8*/ }
+			
+			.nav-collapsible:after { content: '\02795'; /*Unicode character for "plus" sign (+)*/ font-size: 13px; color: black; float: right; margin-left: 5px; }
+			.active:after { /*Unicode character for "minus" sign (-)*/ content: '\2796'; }
+			
 			.nav-collapsible-primary { margin-top: 16px; }
-			.nav-collapsible-secundary { 
+			button.nav, .nav-collapsible-secundary { 
 				margin-top: 80px;
 				position: relative;
 				bottom: 15px;
 			}
 			
 			.nav-principal, .nav2  {
-				display: none;
-				
 				background: aliceblue;
 				line-height: 30px;
 				text-shadow: 0 0 0.3px lightsalmon;
+				/*
+					Preparação para o nav-collapse:
+					1. Com a propriedade display = "none"
+					2. com as propriedades max-height, overflow/hidden e transition (animado)
+				*/
+				/*display: none;*/
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
 				ul { list-style: none; margin: 0; padding-left: 15px; &:first-of-type { /*margin-top: 16px;*/ } }
 				li { display: inline; padding: 5px; }
 				a { color: black; text-decoration: none; }
 				&:hover { text-decoration: underline; }
-				.nav-flex-around { justify-content: space-around; }
-				.nav-flex-start { justify-content: flex-start; }
+				.flex-direction { flex-direction: column; }
+				.nav-flex-space-around { justify-content: space-around; }
+				/*.nav-flex-start { justify-content: flex-start; }*/
 			}
 			.nav2 { position: relative; bottom: 15px;  /*margin-top: 80px; clear: left;*/ }
 
@@ -205,6 +224,19 @@ html {
 /* 
 	Media Queries
 */
+/*Querie para controlar a navegação*/
+@media only screen and (min-width: 48em) {/*768*/
+	.nav-collapsible { display: none; }
+	html body .todo .nav-principal .flex-direction, html body .todo .nav2 .flex-direction { flex-direction: row; }
+	html body .todo .nav-principal, html body .todo .nav2 { 
+		max-height: none;
+	}
+	.nav-principal { margin-top: 16px; }
+	.nav-principal ul:first-of-type {
+		margin-top: 16px; 
+	}
+}
+
 @media only screen and (min-width: 530px) {
 	html body .todo main div { width: 430px; }
 

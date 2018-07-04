@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* #00002d #010147 midnightBlue dimGray */
 /* #87a9b5 #a8d9ea #c3e9f7 deepSkyBlue */
 /* #5454d8 #5757a5 #212160 */
@@ -12,6 +13,11 @@ body {
   color: #4848f9;
   width: 100%;
   /* max-width: 980px; */ }
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both; }
 
 .todo {
   background-color: #87a9b5;
@@ -71,7 +77,11 @@ header {
     margin-top: 0;
     padding-bottom: 25px; }
 
-.nav-collapsible {
+[class*='nav'] a {
+  color: black;
+  text-decoration: none; }
+
+button.nav, .nav-collapsible {
   font-size: 15px;
   background-color: aliceblue;
   color: black;
@@ -87,7 +97,7 @@ header {
 .nav-collapsible-primary {
   margin-top: 16px; }
 
-.nav-collapsible-secundary {
+button.nav, .nav-collapsible-secundary {
   margin-top: 80px;
   position: relative;
   bottom: 15px; }
@@ -96,17 +106,38 @@ header {
 .active, .nav-collapsible:hover {
   background-color: #eff1ed; }
 
-.nav-flex-around {
+.nav-collapsible:after {
+  /*Unicode character for "plus" sign (+)*/
+  content: '\02795';
+  font-size: 13px;
+  float: right;
+  color: black;
+  margin-left: 5px; }
+
+.active:after {
+  /* Unicode character for "minus" sign (-) */
+  content: '\2796'; }
+
+.flex-direction {
+  flex-direction: column; }
+
+.nav-flex-space-around {
   justify-content: space-around; }
 
-.nav-flex-start {
-  justify-content: flex-start; }
-
+/*.nav-flex-start { justify-content: flex-start; }*/
 .nav-principal, .nav2 {
-  display: none;
   background: aliceblue;
   line-height: 30px;
-  text-shadow: 0 0 0.3px lightsalmon; }
+  text-shadow: 0 0 0.3px lightsalmon;
+  /*
+  	Prepara├º├úo para o nav-collapse:
+  	1. Com a propriedade display = "none"
+  	2. com as propriedades max-height, overflow/hidden e transition (animado)
+  */
+  /*display: none;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out; }
   .nav-principal ul, .nav2 ul {
     list-style: none;
     margin: 0;
@@ -127,6 +158,22 @@ header {
   bottom: 15px;
   /*margin-top: 80px; clear: left;*/ }
 
+@media only screen and (min-width: 48em) {
+  /*768*/
+  .nav-collapsible {
+    display: none; }
+
+  .flex-direction {
+    flex-direction: row; }
+
+  .nav-principal, .nav2 {
+    max-height: none; }
+
+  .nav-principal {
+    margin-top: 16px; }
+
+  .nav-principal ul:first-of-type {
+    margin-top: 16px; } }
 .div-menu figure {
   display: inline;
   margin-left: 10px;

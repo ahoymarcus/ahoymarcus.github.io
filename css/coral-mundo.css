@@ -32,8 +32,9 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
+.flex-direction { flex-direction: column; }
 .nav-flex-space-around { justify-content: space-around; }
-.nav-flex-start { justify-content: flex-start; }
+/*.nav-flex-start { justify-content: flex-start; }*/
 
 .clearfix { content: ""; display: table; clear: both; }
 
@@ -99,7 +100,7 @@ header h2 {
 	font-size: 1.3rem;
 	
 	margin-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 20px; 
 }
 header small {
 	visibility: hidden;
@@ -110,10 +111,13 @@ header small {
 	display: none;
 }
 
-
-.nav-collapsible { font-size: 15px; background-color: aliceblue; color: black; text-shadow: 0 0 0.3px lightsalmon; padding: 18px; width: 100%; border: none; text-align: left; outline: none; cursor: pointer; text-transform: uppercase; }
+[class*='nav'] a { 
+	color: black;
+	text-decoration: none;
+}
+button.nav, .nav-collapsible { font-size: 15px; background-color: aliceblue; color: black; text-shadow: 0 0 0.3px lightsalmon; padding: 18px; width: 100%; border: none; text-align: left; outline: none; cursor: pointer; text-transform: uppercase; }
 .nav-collapsible-primary { margin-top: 16px; }
-.nav-collapsible-secundary { 
+button.nav, .nav-collapsible-secundary { 
 	margin-top: 80px;
 	position: relative;
 	bottom: 15px;
@@ -122,17 +126,36 @@ header small {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .nav-collapsible:hover { background-color: #4a8c4a; }
 
+.nav-collapsible:after {
+	content: '\02795'; /*Unicode character for "plus" sign (+)*/
+	font-size: 13px;
+	color: black;
+	float: right;
+	margin-left: 5px;
+}
+.active:after { 
+	/*Unicode character for "minus" sign (-)*/
+	content: '\2796'; 
+}
 
-.nav-principal, .nav2 {
-	display: none; 
-	
+.nav-principal, .nav2 {	
 		/* aliceblue-#f0f8ff honeydew-#f0fff0 */
 	background: aliceblue; 
 	
 	line-height: 30px;
 	
 			/* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
-	text-shadow: 0 0 0.3px lightsalmon;
+	text-shadow: 0 0 0.2px lightsalmon;
+	
+	/*
+		Preparação para o nav-collapse:
+		1. Com a propriedade display = "none"
+		2. com as propriedades max-height, overflow/hidden e transition (animado)
+	*/
+	/*display: none;*/
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
 }
 .nav-principal ul, .nav2 ul {
 	list-style-type: none; 
@@ -161,6 +184,18 @@ header small {
 	bottom: 15px;
 	
 	/*clear: left;*/
+}
+
+@media only screen and (min-width: 48em) {/*768*/
+	.nav-collapsible { display: none; }
+	.flex-direction { flex-direction: row; }
+	.nav-principal, .nav2 { 
+		max-height: none;
+	}
+	.nav-principal { margin-top: 16px; }
+	.nav-principal ul:first-of-type {
+		margin-top: 16px; 
+	}
 }
 
 .div-menu figure {
